@@ -63,9 +63,11 @@
   <ItemGroup>
     <Compile Include="Assets\Materials\Starfield Skybox\Demo\Script\LookCamera.cs" />
     <Compile Include="Assets\Planet Earth Free\SpinFree.cs" />
+    <Compile Include="Assets\Scripts\BlackHole.cs" />
     <Compile Include="Assets\Scripts\GravityObject.cs" />
     <Compile Include="Assets\Scripts\Laser.cs" />
     <Compile Include="Assets\Scripts\ObjectDeleter.cs" />
+    <Compile Include="Assets\Scripts\Planet.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_TestThrow.cs" />
