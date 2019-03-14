@@ -7,8 +7,7 @@ TagManager:
   - projectile
   - FxTemporaire
   - GravityObject
-  - BlackHole
-  - Planet
+  - Pin
   layers:
   - Default
   - TransparentFX
@@ -19,7 +18,7 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - GravityObject
+  - Pin Detector
   - 
   - 
   - 

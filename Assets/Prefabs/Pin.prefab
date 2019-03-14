@@ -29,9 +29,10 @@ GameObject:
   - component: {fileID: 135839744855519488}
   - component: {fileID: 136663176472403358}
   - component: {fileID: 65786665684782834}
+  - component: {fileID: 114932498292750636}
   m_Layer: 0
   m_Name: Pin
-  m_TagString: Untagged
+  m_TagString: Pin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,6 +120,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.25296414, y: 0.14308037, z: 0.2499485}
   m_Center: {x: -0.007141335, y: 0.070486546, z: 0.0035942532}
+--- !u!114 &114932498292750636
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1623579026982320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02e98e6a01c4ab5499bce2e7b037eaac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135040241878422288
 SphereCollider:
   m_ObjectHideFlags: 1
