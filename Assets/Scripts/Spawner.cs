@@ -10,6 +10,7 @@ namespace Valve.VR.InteractionSystem
         public SteamVR_Action_Boolean spawnSphere;
         public GameObject gravitySphere;
         public GameObject transparentGravitySphere;
+        public float planetSizeMax = 0.1f;
 
         private Hand hand;
         
@@ -55,6 +56,10 @@ namespace Valve.VR.InteractionSystem
                 radiusEndPoint = transform.position;
                 GameObject newGravityObject = Instantiate(gravitySphere, radiusStartPoint, new Quaternion());
                 float gravityObjectRadius = Vector3.Distance(radiusStartPoint, radiusEndPoint);
+                if (gravityObjectRadius > planetSizeMax)
+                {
+                    gravityObjectRadius = planetSizeMax;
+                }
                 float gravityObjectScale = gravityObjectRadius / scaleFactor;
                 newGravityObject.transform.localScale = new Vector3(gravityObjectScale, gravityObjectScale, gravityObjectScale);
                 newGravityObject.GetComponent<Rigidbody>().mass = gravityObjectRadius * scaleFactor;
@@ -70,6 +75,10 @@ namespace Valve.VR.InteractionSystem
             if (transparentEarth)
             {
                 float gravityObjectRadius = Vector3.Distance(transparentEarth.transform.position, transform.position);
+                if (gravityObjectRadius > planetSizeMax)
+                {
+                    gravityObjectRadius = planetSizeMax;
+                }
                 float gravityObjectScale = gravityObjectRadius / scaleFactor;
                 transparentEarth.transform.localScale = new Vector3(gravityObjectScale, gravityObjectScale, gravityObjectScale);
             }

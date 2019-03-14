@@ -612,6 +612,7 @@ MonoBehaviour:
     type: 2}
   transparentGravitySphere: {fileID: 1569128380449218, guid: 3ce4bceed11a3f44097db148f7a5f638,
     type: 2}
+  planetSizeMax: 0.2
 --- !u!114 &1591704694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -628,6 +629,7 @@ MonoBehaviour:
     type: 2}
   transparentGravitySphere: {fileID: 1569128380449218, guid: 3ce4bceed11a3f44097db148f7a5f638,
     type: 2}
+  planetSizeMax: 0.2
 --- !u!1001 &2002602037
 Prefab:
   m_ObjectHideFlags: 0
