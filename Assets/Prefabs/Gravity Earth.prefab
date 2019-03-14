@@ -219,6 +219,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityActive: 0
+  explosionParticles: {fileID: 1666585897572436, guid: 2d7eab7338c63e64799659e865850608,
+    type: 2}
 --- !u!114 &114198235069782598
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -7,6 +7,8 @@ namespace Valve.VR.InteractionSystem
     public class Planet : GravityObject
     {
 
+        public GameObject explosionParticles;
+
         private float gravityModifier = 0.06674f; //0.00000000006674f;
         private Rigidbody cubeRB;
 
@@ -23,6 +25,11 @@ namespace Valve.VR.InteractionSystem
         private void OnCollisionEnter(Collision collision)
         {
             gravityActive = true;
+            if (collision.gameObject.name == "Black Hole")
+            {
+                GameObject explosion = Instantiate(explosionParticles, transform.position, explosionParticles.transform.rotation);
+                Destroy(explosion, explosion.GetComponent<ParticleSystem>().main.startLifetimeMultiplier);
+            }
         }
 
         private void Update()
