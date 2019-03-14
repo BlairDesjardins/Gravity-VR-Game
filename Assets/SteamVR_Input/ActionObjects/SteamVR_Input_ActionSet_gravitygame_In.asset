@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d497f438d2c50b94b8f4481729da23a4, type: 3}
+  m_Name: SteamVR_Input_ActionSet_gravitygame_In
+  m_EditorClassIdentifier: 
+  actionSet: {fileID: 0}
+  listDirection: 0
+  actions:
+  - {fileID: 11400000, guid: 50a3b24a5a5bbf840adc1b97a272a901, type: 2}
+  - {fileID: 11400000, guid: 5bf3cf67e6238394588f93c5fe45ef2d, type: 2}
+  - {fileID: 11400000, guid: 868a1d634b9815b4fa71cf987194183c, type: 2}
+  - {fileID: 11400000, guid: 44d46dc9f0ea62f48a3ec2d8f610a0f1, type: 2}
+  InteractUI: {fileID: 11400000, guid: 50a3b24a5a5bbf840adc1b97a272a901, type: 2}
+  SpawnSphere: {fileID: 11400000, guid: 5bf3cf67e6238394588f93c5fe45ef2d, type: 2}
+  GrabPinch: {fileID: 11400000, guid: 868a1d634b9815b4fa71cf987194183c, type: 2}
+  GrabGrip: {fileID: 11400000, guid: 44d46dc9f0ea62f48a3ec2d8f610a0f1, type: 2}

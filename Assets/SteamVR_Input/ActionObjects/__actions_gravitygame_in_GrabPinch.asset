@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c3d755cf6cc936488afcb037b69341e, type: 3}
-  m_Name: __actions_default_in_SpawnSphere
+  m_Name: __actions_gravitygame_in_GrabPinch
   m_EditorClassIdentifier: 
   changeTolerance: 0.000001
-  fullPath: /actions/default/in/SpawnSphere
-  actionSet: {fileID: 11400000, guid: 7a4cf2d925d01194084d827bab7406cf, type: 2}
+  fullPath: /actions/gravitygame/in/GrabPinch
+  actionSet: {fileID: 11400000, guid: 413b6f8f8eabb86469cf4f111d91d773, type: 2}
   direction: 0

@@ -231,6 +231,9 @@
     <Compile Include="Assets\SteamVR_Input\ActionObjects\SteamVR_Input_ActionSet_default.cs" />
     <Compile Include="Assets\SteamVR_Input\ActionObjects\SteamVR_Input_ActionSet_default_In.cs" />
     <Compile Include="Assets\SteamVR_Input\ActionObjects\SteamVR_Input_ActionSet_default_Out.cs" />
+    <Compile Include="Assets\SteamVR_Input\ActionObjects\SteamVR_Input_ActionSet_gravitygame.cs" />
+    <Compile Include="Assets\SteamVR_Input\ActionObjects\SteamVR_Input_ActionSet_gravitygame_In.cs" />
+    <Compile Include="Assets\SteamVR_Input\ActionObjects\SteamVR_Input_ActionSet_gravitygame_Out.cs" />
     <Compile Include="Assets\SteamVR_Input\ActionObjects\SteamVR_Input_ActionSet_platformer.cs" />
     <Compile Include="Assets\SteamVR_Input\ActionObjects\SteamVR_Input_ActionSet_platformer_In.cs" />
     <Compile Include="Assets\SteamVR_Input\SteamVR_Input_Actions.cs" />

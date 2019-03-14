@@ -583,6 +583,46 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 11450312, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
+      propertyPath: grabPinchAction
+      value: 
+      objectReference: {fileID: 11400000, guid: 868a1d634b9815b4fa71cf987194183c,
+        type: 2}
+    - target: {fileID: 11450312, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
+      propertyPath: grabGripAction
+      value: 
+      objectReference: {fileID: 11400000, guid: 44d46dc9f0ea62f48a3ec2d8f610a0f1,
+        type: 2}
+    - target: {fileID: 11450312, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
+      propertyPath: hapticAction
+      value: 
+      objectReference: {fileID: 11400000, guid: 0149fa10a321c7741957ac0c563e58af,
+        type: 2}
+    - target: {fileID: 11450312, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
+      propertyPath: uiInteractAction
+      value: 
+      objectReference: {fileID: 11400000, guid: 50a3b24a5a5bbf840adc1b97a272a901,
+        type: 2}
+    - target: {fileID: 11401046, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
+      propertyPath: grabPinchAction
+      value: 
+      objectReference: {fileID: 11400000, guid: 868a1d634b9815b4fa71cf987194183c,
+        type: 2}
+    - target: {fileID: 11401046, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
+      propertyPath: grabGripAction
+      value: 
+      objectReference: {fileID: 11400000, guid: 44d46dc9f0ea62f48a3ec2d8f610a0f1,
+        type: 2}
+    - target: {fileID: 11401046, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
+      propertyPath: hapticAction
+      value: 
+      objectReference: {fileID: 11400000, guid: 0149fa10a321c7741957ac0c563e58af,
+        type: 2}
+    - target: {fileID: 11401046, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
+      propertyPath: uiInteractAction
+      value: 
+      objectReference: {fileID: 11400000, guid: 50a3b24a5a5bbf840adc1b97a272a901,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
   m_IsPrefabAsset: 0
@@ -607,7 +647,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e78759c6f7f6794eba124c1f1009c38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnSphere: {fileID: 11400000, guid: 704fcd7ce2cb1db408902fab758deafb, type: 2}
+  actionSetEnable: {fileID: 11400000, guid: 413b6f8f8eabb86469cf4f111d91d773, type: 2}
+  spawnSphere: {fileID: 11400000, guid: 5bf3cf67e6238394588f93c5fe45ef2d, type: 2}
   gravitySphere: {fileID: 1323590907356388, guid: 90d75b603abf73a45934d0dd72b0a332,
     type: 2}
   transparentGravitySphere: {fileID: 1569128380449218, guid: 3ce4bceed11a3f44097db148f7a5f638,
@@ -624,7 +665,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e78759c6f7f6794eba124c1f1009c38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnSphere: {fileID: 11400000, guid: 704fcd7ce2cb1db408902fab758deafb, type: 2}
+  actionSetEnable: {fileID: 11400000, guid: 413b6f8f8eabb86469cf4f111d91d773, type: 2}
+  spawnSphere: {fileID: 11400000, guid: 5bf3cf67e6238394588f93c5fe45ef2d, type: 2}
   gravitySphere: {fileID: 1323590907356388, guid: 90d75b603abf73a45934d0dd72b0a332,
     type: 2}
   transparentGravitySphere: {fileID: 1569128380449218, guid: 3ce4bceed11a3f44097db148f7a5f638,
@@ -654,7 +696,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1751508907}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.05, z: 0.5}

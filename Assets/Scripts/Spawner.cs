@@ -7,6 +7,7 @@ namespace Valve.VR.InteractionSystem
     public class Spawner : MonoBehaviour
     {
 
+        public SteamVR_ActionSet actionSetEnable;
         public SteamVR_Action_Boolean spawnSphere;
         public GameObject gravitySphere;
         public GameObject transparentGravitySphere;
@@ -22,6 +23,7 @@ namespace Valve.VR.InteractionSystem
 
         private void OnEnable()
         {
+            actionSetEnable.ActivateSecondary(true);
             if (hand == null)
                 hand = this.GetComponent<Hand>();
 

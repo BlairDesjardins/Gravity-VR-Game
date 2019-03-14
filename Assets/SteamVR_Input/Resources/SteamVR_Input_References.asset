@@ -15,10 +15,12 @@ MonoBehaviour:
   - _default
   - platformer
   - buggy
+  - gravitygame
   actionSetObjects:
   - {fileID: 11400000, guid: 7a4cf2d925d01194084d827bab7406cf, type: 2}
   - {fileID: 11400000, guid: 374c372de39fe3245af5b358f1e79744, type: 2}
   - {fileID: 11400000, guid: 21b24005219b82c46ae2a1bd5ccb80f9, type: 2}
+  - {fileID: 11400000, guid: 413b6f8f8eabb86469cf4f111d91d773, type: 2}
   actionNames:
   - __actions_default_in_InteractUI
   - __actions_default_in_Teleport
@@ -28,7 +30,6 @@ MonoBehaviour:
   - __actions_default_in_SkeletonLeftHand
   - __actions_default_in_SkeletonRightHand
   - __actions_default_in_Squeeze
-  - __actions_default_in_SpawnSphere
   - __actions_default_out_Haptic
   - __actions_platformer_in_Move
   - __actions_platformer_in_Jump
@@ -36,6 +37,11 @@ MonoBehaviour:
   - __actions_buggy_in_Throttle
   - __actions_buggy_in_Brake
   - __actions_buggy_in_Reset
+  - __actions_gravitygame_in_InteractUI
+  - __actions_gravitygame_in_SpawnSphere
+  - __actions_gravitygame_in_GrabPinch
+  - __actions_gravitygame_in_GrabGrip
+  - __actions_gravitygame_out_Haptic
   actionObjects:
   - {fileID: 11400000, guid: 364e2505048849d498e071f625ee33ee, type: 2}
   - {fileID: 11400000, guid: dd1a4787f47ffc74ba9be8ac8596f952, type: 2}
@@ -45,7 +51,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f94e55f88e3142f41be09ef75a6fc950, type: 2}
   - {fileID: 11400000, guid: a55ed46d9e61bf444bab56717e12070d, type: 2}
   - {fileID: 11400000, guid: f13afe6c7a6a7114db463ba34a49c7e6, type: 2}
-  - {fileID: 11400000, guid: 704fcd7ce2cb1db408902fab758deafb, type: 2}
   - {fileID: 11400000, guid: 1599fac983f56424a9f385fac7ba43a4, type: 2}
   - {fileID: 11400000, guid: 1a18661ab0a6ba64e8d0e36de8ed4152, type: 2}
   - {fileID: 11400000, guid: ed5e06ae2e0f67a4a97ccb5c62eff38a, type: 2}
@@ -53,3 +58,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b515c7d643e3eb241baf3fb268e68cde, type: 2}
   - {fileID: 11400000, guid: f3ff3337c51d8824cbbe9fe2259ee788, type: 2}
   - {fileID: 11400000, guid: 448dc8810746560469380c2f9ed5a86d, type: 2}
+  - {fileID: 11400000, guid: 50a3b24a5a5bbf840adc1b97a272a901, type: 2}
+  - {fileID: 11400000, guid: 5bf3cf67e6238394588f93c5fe45ef2d, type: 2}
+  - {fileID: 11400000, guid: 868a1d634b9815b4fa71cf987194183c, type: 2}
+  - {fileID: 11400000, guid: 44d46dc9f0ea62f48a3ec2d8f610a0f1, type: 2}
+  - {fileID: 11400000, guid: 0149fa10a321c7741957ac0c563e58af, type: 2}
