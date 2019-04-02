@@ -47,8 +47,6 @@ namespace Valve.VR
         
         public static SteamVR_Action_Boolean __actions_buggy_in_Reset;
         
-        public static SteamVR_Action_Boolean __actions_gravitygame_in_InteractUI;
-        
         public static SteamVR_Action_Boolean __actions_gravitygame_in_SpawnSphere;
         
         public static SteamVR_Action_Boolean __actions_gravitygame_in_GrabPinch;
@@ -56,6 +54,8 @@ namespace Valve.VR
         public static SteamVR_Action_Boolean __actions_gravitygame_in_GrabGrip;
         
         public static SteamVR_Action_Vibration __actions_gravitygame_out_Haptic;
+        
+        public static SteamVR_Action_Boolean __actions_LaserUI_in_InteractUI;
         
         public static void Dynamic_InitializeActions()
         {
@@ -74,11 +74,11 @@ namespace Valve.VR
             SteamVR_Input.__actions_buggy_in_Throttle.Initialize();
             SteamVR_Input.__actions_buggy_in_Brake.Initialize();
             SteamVR_Input.__actions_buggy_in_Reset.Initialize();
-            SteamVR_Input.__actions_gravitygame_in_InteractUI.Initialize();
             SteamVR_Input.__actions_gravitygame_in_SpawnSphere.Initialize();
             SteamVR_Input.__actions_gravitygame_in_GrabPinch.Initialize();
             SteamVR_Input.__actions_gravitygame_in_GrabGrip.Initialize();
             SteamVR_Input.__actions_gravitygame_out_Haptic.Initialize();
+            SteamVR_Input.__actions_LaserUI_in_InteractUI.Initialize();
         }
         
         public static void Dynamic_InitializeInstanceActions()
@@ -98,11 +98,11 @@ namespace Valve.VR
             Valve.VR.SteamVR_Input.__actions_buggy_in_Throttle = ((SteamVR_Action_Single)(SteamVR_Input_References.GetAction("__actions_buggy_in_Throttle")));
             Valve.VR.SteamVR_Input.__actions_buggy_in_Brake = ((SteamVR_Action_Boolean)(SteamVR_Input_References.GetAction("__actions_buggy_in_Brake")));
             Valve.VR.SteamVR_Input.__actions_buggy_in_Reset = ((SteamVR_Action_Boolean)(SteamVR_Input_References.GetAction("__actions_buggy_in_Reset")));
-            Valve.VR.SteamVR_Input.__actions_gravitygame_in_InteractUI = ((SteamVR_Action_Boolean)(SteamVR_Input_References.GetAction("__actions_gravitygame_in_InteractUI")));
             Valve.VR.SteamVR_Input.__actions_gravitygame_in_SpawnSphere = ((SteamVR_Action_Boolean)(SteamVR_Input_References.GetAction("__actions_gravitygame_in_SpawnSphere")));
             Valve.VR.SteamVR_Input.__actions_gravitygame_in_GrabPinch = ((SteamVR_Action_Boolean)(SteamVR_Input_References.GetAction("__actions_gravitygame_in_GrabPinch")));
             Valve.VR.SteamVR_Input.__actions_gravitygame_in_GrabGrip = ((SteamVR_Action_Boolean)(SteamVR_Input_References.GetAction("__actions_gravitygame_in_GrabGrip")));
             Valve.VR.SteamVR_Input.__actions_gravitygame_out_Haptic = ((SteamVR_Action_Vibration)(SteamVR_Input_References.GetAction("__actions_gravitygame_out_Haptic")));
+            Valve.VR.SteamVR_Input.__actions_LaserUI_in_InteractUI = ((SteamVR_Action_Boolean)(SteamVR_Input_References.GetAction("__actions_LaserUI_in_InteractUI")));
             Valve.VR.SteamVR_Input.actions = new Valve.VR.SteamVR_Action[]
             {
                     Valve.VR.SteamVR_Input.__actions_default_in_InteractUI,
@@ -120,11 +120,11 @@ namespace Valve.VR
                     Valve.VR.SteamVR_Input.__actions_buggy_in_Throttle,
                     Valve.VR.SteamVR_Input.__actions_buggy_in_Brake,
                     Valve.VR.SteamVR_Input.__actions_buggy_in_Reset,
-                    Valve.VR.SteamVR_Input.__actions_gravitygame_in_InteractUI,
                     Valve.VR.SteamVR_Input.__actions_gravitygame_in_SpawnSphere,
                     Valve.VR.SteamVR_Input.__actions_gravitygame_in_GrabPinch,
                     Valve.VR.SteamVR_Input.__actions_gravitygame_in_GrabGrip,
-                    Valve.VR.SteamVR_Input.__actions_gravitygame_out_Haptic};
+                    Valve.VR.SteamVR_Input.__actions_gravitygame_out_Haptic,
+                    Valve.VR.SteamVR_Input.__actions_LaserUI_in_InteractUI};
             Valve.VR.SteamVR_Input.actionsIn = new Valve.VR.SteamVR_Action_In[]
             {
                     Valve.VR.SteamVR_Input.__actions_default_in_InteractUI,
@@ -141,10 +141,10 @@ namespace Valve.VR
                     Valve.VR.SteamVR_Input.__actions_buggy_in_Throttle,
                     Valve.VR.SteamVR_Input.__actions_buggy_in_Brake,
                     Valve.VR.SteamVR_Input.__actions_buggy_in_Reset,
-                    Valve.VR.SteamVR_Input.__actions_gravitygame_in_InteractUI,
                     Valve.VR.SteamVR_Input.__actions_gravitygame_in_SpawnSphere,
                     Valve.VR.SteamVR_Input.__actions_gravitygame_in_GrabPinch,
-                    Valve.VR.SteamVR_Input.__actions_gravitygame_in_GrabGrip};
+                    Valve.VR.SteamVR_Input.__actions_gravitygame_in_GrabGrip,
+                    Valve.VR.SteamVR_Input.__actions_LaserUI_in_InteractUI};
             Valve.VR.SteamVR_Input.actionsOut = new Valve.VR.SteamVR_Action_Out[]
             {
                     Valve.VR.SteamVR_Input.__actions_default_out_Haptic,
@@ -165,10 +165,10 @@ namespace Valve.VR
                     Valve.VR.SteamVR_Input.__actions_platformer_in_Jump,
                     Valve.VR.SteamVR_Input.__actions_buggy_in_Brake,
                     Valve.VR.SteamVR_Input.__actions_buggy_in_Reset,
-                    Valve.VR.SteamVR_Input.__actions_gravitygame_in_InteractUI,
                     Valve.VR.SteamVR_Input.__actions_gravitygame_in_SpawnSphere,
                     Valve.VR.SteamVR_Input.__actions_gravitygame_in_GrabPinch,
-                    Valve.VR.SteamVR_Input.__actions_gravitygame_in_GrabGrip};
+                    Valve.VR.SteamVR_Input.__actions_gravitygame_in_GrabGrip,
+                    Valve.VR.SteamVR_Input.__actions_LaserUI_in_InteractUI};
             Valve.VR.SteamVR_Input.actionsSingle = new Valve.VR.SteamVR_Action_Single[]
             {
                     Valve.VR.SteamVR_Input.__actions_default_in_Squeeze,
@@ -195,10 +195,10 @@ namespace Valve.VR
                     Valve.VR.SteamVR_Input.__actions_buggy_in_Throttle,
                     Valve.VR.SteamVR_Input.__actions_buggy_in_Brake,
                     Valve.VR.SteamVR_Input.__actions_buggy_in_Reset,
-                    Valve.VR.SteamVR_Input.__actions_gravitygame_in_InteractUI,
                     Valve.VR.SteamVR_Input.__actions_gravitygame_in_SpawnSphere,
                     Valve.VR.SteamVR_Input.__actions_gravitygame_in_GrabPinch,
-                    Valve.VR.SteamVR_Input.__actions_gravitygame_in_GrabGrip};
+                    Valve.VR.SteamVR_Input.__actions_gravitygame_in_GrabGrip,
+                    Valve.VR.SteamVR_Input.__actions_LaserUI_in_InteractUI};
         }
     }
 }

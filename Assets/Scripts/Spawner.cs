@@ -23,7 +23,7 @@ namespace Valve.VR.InteractionSystem
 
         private void OnEnable()
         {
-            actionSetEnable.ActivateSecondary(true);
+            actionSetEnable.ActivatePrimary();
             if (hand == null)
                 hand = this.GetComponent<Hand>();
 

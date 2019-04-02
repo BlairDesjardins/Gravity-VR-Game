@@ -40,8 +40,8 @@ MonoBehaviour:
     y: 631
     width: 1182
     height: 316
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -70,7 +70,7 @@ MonoBehaviour:
   m_MinSize: {x: 102, y: 242}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 52
+  controlID: 11
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_MinSize: {x: 613, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 1
-  controlID: 50
+  controlID: 33
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,7 +162,7 @@ MonoBehaviour:
   m_MinSize: {x: 613, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 51
+  controlID: 34
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -232,7 +232,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 492}
   m_MaxSize: {x: 10004, y: 14042}
   vertical: 1
-  controlID: 99
+  controlID: 35
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,8 +251,8 @@ MonoBehaviour:
     y: 0
     width: 464
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -469,14 +469,14 @@ MonoBehaviour:
     height: 610
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 47.492409599999995
+  lastFramingTime: 12043.014969799999
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.91703, y: 0.16761291, z: 6.696395}
+    m_Target: {x: 0.22288918, y: 0.83083117, z: 2.2761815}
     speed: 2
-    m_Value: {x: -1.91703, y: 0.16761291, z: 6.696395}
+    m_Value: {x: 0.22288918, y: 0.83083117, z: 2.2761815}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -504,13 +504,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.14114302, y: 0.5190044, z: -0.0873876, w: -0.8382544}
+    m_Target: {x: -0.21924788, y: 0.47202778, z: -0.12239325, w: -0.84506726}
     speed: 2
-    m_Value: {x: -0.14117168, y: 0.5191098, z: -0.08740535, w: -0.8384246}
+    m_Value: {x: -0.21924803, y: 0.47202808, z: -0.12239333, w: -0.8450678}
   m_Size:
-    m_Target: 6.039174
+    m_Target: 8.039555
     speed: 2
-    m_Value: 6.039174
+    m_Value: 8.039555
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -618,7 +618,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/SteamVR/InteractionSystem/Samples/Prefabs
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
@@ -630,7 +630,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 0a400000
     m_LastClickedID: 16394
-    m_ExpandedIDs: 00000000d22b0000482c0000ba2d0000ec2e0000de2f0000cc3200000e34000024350000
+    m_ExpandedIDs: 00000000dc2b0000542c0000bc2d0000fc2e0000c22f0000f22f0000e83200001233000040350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -655,24 +655,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 0}
+    scrollPos: {x: 0, y: 360}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000d22b0000482c0000ec2e0000ae2f0000de2f0000cc32000024350000
+    m_ExpandedIDs: ffffffff00000000dc2b0000bc2d0000fc2e0000c22f0000f22f000040350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Spawner
-      m_OriginalName: Spawner
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 10982
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 13}
     m_SearchString: 
@@ -742,7 +742,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 569dfcff589dfcffd09dfcff2aaefcff2c30fdff8640fdffaa64fdff0475fdffa63dffff82eeffffe6fbffff000000009e3e0000b83f0000d03f0000
+    m_ExpandedIDs: 6cfbffffe6fbffff000000009e360000ae360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

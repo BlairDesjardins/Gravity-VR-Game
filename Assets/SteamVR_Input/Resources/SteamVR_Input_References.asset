@@ -16,11 +16,13 @@ MonoBehaviour:
   - platformer
   - buggy
   - gravitygame
+  - LaserUI
   actionSetObjects:
   - {fileID: 11400000, guid: 7a4cf2d925d01194084d827bab7406cf, type: 2}
   - {fileID: 11400000, guid: 374c372de39fe3245af5b358f1e79744, type: 2}
   - {fileID: 11400000, guid: 21b24005219b82c46ae2a1bd5ccb80f9, type: 2}
   - {fileID: 11400000, guid: 413b6f8f8eabb86469cf4f111d91d773, type: 2}
+  - {fileID: 11400000, guid: a130fdb732c4eff44aca8610fcd75c15, type: 2}
   actionNames:
   - __actions_default_in_InteractUI
   - __actions_default_in_Teleport
@@ -37,11 +39,11 @@ MonoBehaviour:
   - __actions_buggy_in_Throttle
   - __actions_buggy_in_Brake
   - __actions_buggy_in_Reset
-  - __actions_gravitygame_in_InteractUI
   - __actions_gravitygame_in_SpawnSphere
   - __actions_gravitygame_in_GrabPinch
   - __actions_gravitygame_in_GrabGrip
   - __actions_gravitygame_out_Haptic
+  - __actions_LaserUI_in_InteractUI
   actionObjects:
   - {fileID: 11400000, guid: 364e2505048849d498e071f625ee33ee, type: 2}
   - {fileID: 11400000, guid: dd1a4787f47ffc74ba9be8ac8596f952, type: 2}
@@ -58,8 +60,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b515c7d643e3eb241baf3fb268e68cde, type: 2}
   - {fileID: 11400000, guid: f3ff3337c51d8824cbbe9fe2259ee788, type: 2}
   - {fileID: 11400000, guid: 448dc8810746560469380c2f9ed5a86d, type: 2}
-  - {fileID: 11400000, guid: 50a3b24a5a5bbf840adc1b97a272a901, type: 2}
   - {fileID: 11400000, guid: 5bf3cf67e6238394588f93c5fe45ef2d, type: 2}
   - {fileID: 11400000, guid: 868a1d634b9815b4fa71cf987194183c, type: 2}
   - {fileID: 11400000, guid: 44d46dc9f0ea62f48a3ec2d8f610a0f1, type: 2}
   - {fileID: 11400000, guid: 0149fa10a321c7741957ac0c563e58af, type: 2}
+  - {fileID: 11400000, guid: 7490e8c9f62525543b1cd62beea432af, type: 2}

@@ -12,13 +12,11 @@ MonoBehaviour:
   m_Name: __actions_gravitygame
   m_EditorClassIdentifier: 
   allActions:
-  - {fileID: 11400000, guid: 50a3b24a5a5bbf840adc1b97a272a901, type: 2}
   - {fileID: 11400000, guid: 5bf3cf67e6238394588f93c5fe45ef2d, type: 2}
   - {fileID: 11400000, guid: 868a1d634b9815b4fa71cf987194183c, type: 2}
   - {fileID: 11400000, guid: 44d46dc9f0ea62f48a3ec2d8f610a0f1, type: 2}
   - {fileID: 11400000, guid: 0149fa10a321c7741957ac0c563e58af, type: 2}
   nonVisualInActions:
-  - {fileID: 11400000, guid: 50a3b24a5a5bbf840adc1b97a272a901, type: 2}
   - {fileID: 11400000, guid: 5bf3cf67e6238394588f93c5fe45ef2d, type: 2}
   - {fileID: 11400000, guid: 868a1d634b9815b4fa71cf987194183c, type: 2}
   - {fileID: 11400000, guid: 44d46dc9f0ea62f48a3ec2d8f610a0f1, type: 2}

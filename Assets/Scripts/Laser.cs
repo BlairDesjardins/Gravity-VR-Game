@@ -5,11 +5,10 @@ using Valve.VR.InteractionSystem;
 
 namespace Valve.VR.InteractionSystem
 {
+    [RequireComponent(typeof(LineRenderer))]
     public class Laser : MonoBehaviour
     {
-
-        public SteamVR_Action_Boolean laserAction;
-
+        public SteamVR_Action_Boolean interactUI;
         public Hand hand;
 
         public LineRenderer laser;
@@ -19,13 +18,13 @@ namespace Valve.VR.InteractionSystem
             if (hand == null)
                 hand = this.GetComponent<Hand>();
 
-            if (laserAction == null)
+            if (interactUI == null)
             {
-                Debug.LogError("No laser action assigned");
+                Debug.LogError("No interactUI action assigned");
                 return;
             }
 
-            laserAction.AddOnChangeListener(OnLaserActionChange, hand.handType);
+            interactUI.AddOnChangeListener(OnInteractUIActionChange, hand.handType);
 
             if (laser == null)
                 laser = this.GetComponent<LineRenderer>();
@@ -33,37 +32,29 @@ namespace Valve.VR.InteractionSystem
 
         private void OnDisable()
         {
-            if (laserAction != null)
-                laserAction.RemoveOnChangeListener(OnLaserActionChange, hand.handType);
+            if (interactUI != null)
+                interactUI.RemoveOnChangeListener(OnInteractUIActionChange, hand.handType);
         }
 
-        private void OnLaserActionChange(SteamVR_Action_In actionIn)
+        private void OnInteractUIActionChange(SteamVR_Action_In actionIn)
         {
-            if (laserAction.GetStateDown(hand.handType))
-            {
-                laser.enabled = true;
-            }
-            else if (laserAction.GetStateUp(hand.handType))
-            {
-                laser.enabled = false;
-            }
+            Debug.Log("UI Click");
         }
 
         private void Update()
         {
-            if (laser.enabled)
+            LayerMask mask = LayerMask.GetMask("UI");
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, mask))
             {
-                RaycastHit hit;
-                if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity))
-                {
-                    laser.SetPosition(0, transform.position);
-                    laser.SetPosition(1, hit.point);
-                }
-                else
-                {
-                    laser.SetPosition(0, transform.position);
-                    laser.SetPosition(1, transform.TransformDirection(Vector3.forward) * 1000);
-                }
+                laser.enabled = true;
+                laser.SetPosition(0, transform.position);
+                laser.SetPosition(1, hit.point);
+            }
+            else
+            {
+                if (laser.enabled)
+                    laser.enabled = false;
             }
             
         }

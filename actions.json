@@ -64,10 +64,6 @@
       "type": "boolean"
     },
     {
-      "name": "/actions/gravitygame/in/InteractUI",
-      "type": "boolean"
-    },
-    {
       "name": "/actions/gravitygame/in/SpawnSphere",
       "type": "boolean"
     },
@@ -82,6 +78,10 @@
     {
       "name": "/actions/gravitygame/out/Haptic",
       "type": "vibration"
+    },
+    {
+      "name": "/actions/LaserUI/in/InteractUI",
+      "type": "boolean"
     }
   ],
   "action_sets": [
@@ -99,6 +99,10 @@
     },
     {
       "name": "/actions/gravitygame",
+      "usage": "single"
+    },
+    {
+      "name": "/actions/LaserUI",
       "usage": "single"
     }
   ],
@@ -144,7 +148,8 @@
       "/actions/gravitygame/in/SpawnSphere": "Spawn Sphere",
       "/actions/gravitygame/out/Haptic": "Haptic",
       "/actions/gravitygame/in/GrabPinch": "Grab Pinch",
-      "/actions/gravitygame/in/GrabGrip": "Grab Grip"
+      "/actions/gravitygame/in/GrabGrip": "Grab Grip",
+      "/actions/LaserUI/in/InteractUI": "Interact With UI"
     }
   ]
 }
